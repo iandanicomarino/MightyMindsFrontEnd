@@ -1,0 +1,53 @@
+<html ng-App="app">
+<head>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="style-ls.css">
+  <script src="script-ls.js"></script>
+  <title>MightyMinds</title>
+</head>
+<body ng-controller="Ctrl">
+  <div class="login-page">
+    <div class="form">
+      <img src="./img/Drawing.png"/>
+      <form ng-submit="registerschool()" class="register-school default-fadein" ng-hide="hiddenschool" ng-class="{fadein: startFadein}">
+        <input type="text" placeholder="username" ng-model="Account.username" required="required"/>
+        <input type="password" placeholder="password" ng-model="Account.password" required="required"/>
+        <input type="text" placeholder="School Name" ng-model="Account.schoolname" required="required"/>
+        <input type="text" placeholder="Address" ng-model="Account.address" required="required"/>
+        <input type="email" placeholder="E-mail" ng-model="Account.email" required="required"/>
+        <button type="submit">Register</button>
+        <p class="message">Return to <a ng-click="hideschool()" href="">Sign In</a></p>
+      </form>
+      <form ng-submit="registersponsor()" class="register-form default-fadein" ng-hide="hiddenreg" ng-class="{fadein: startFadein}">
+        <input type="text" placeholder="username" ng-model="Account.username" required="required"/>
+        <input type="password" placeholder="password" ng-model="Account.password" required="required"/>
+        <input type="text" placeholder="First Name" ng-model="Account.firstname" required="required"/>
+        <input type="text" placeholder="Middle Name" ng-model="Account.middlename" required="required"/>
+        <input type="text" placeholder="Last Name" ng-model="Account.lastname" required="required"/>
+        <input type="text" placeholder="Address" ng-model="Account.address" required="required"/>
+        <input type="email" placeholder="E-mail" ng-model="Account.email" required="required"/>
+        <button type="submit">Register</button>
+        <p class="message">Already registered? <a ng-click="hideregi()" href="">Sign In</a></p>
+      </form>
+      <form ng-submit="login()" id="login" class="login-form default-fadeout" ng-hide="hiddenlog" ng-class="{fadeout: startFadeout}">
+        <input type="text" class="glowing-border" placeholder="username" ng-model="Account.username"  required="required"/>
+        <input type="password" placeholder="password" ng-model="Account.password" required="required"/>
+        <button type="submit">Login</button>
+        <p class="message">Register:
+          <a ng-click="hidelogSp()" href="">Sponsor</a> or
+          <a ng-click="hidelogSc()" href="">School</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      &copy;2007 - 2016<br>
+      <a id="mm"href="http://mightyminds.org/">MightyMinds, Inc.</a>
+      | All Rights Reserved.<br>
+      <strong>Site Designed by:</strong>
+      <a id="topsi" href="http://myteamops.com/">Team O.P.S. Inc.</a>
+    </div>
+  </body>
+  </html>

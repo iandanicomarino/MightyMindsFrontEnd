@@ -1,0 +1,151 @@
+/*Background*/
+body {
+  background: #FFFAFA; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, 	#FFD700, #7FFF00);
+  background: -moz-linear-gradient(right, 	#FFD700, #7FFF00);
+  background: -o-linear-gradient(right, 	#FFD700, #7FFF00);
+  background: linear-gradient(to left, 	#FFD700, #7FFF00);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Font*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Light.ttf') format('truetype');
+}
+
+/*Logo*/
+img{
+  width:270px;
+  margin-bottom: 10px;
+}
+
+/*Form~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #dadada;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/*input:valid {
+    outline: none;
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+input:invalid {
+  border-color: #00ff00;
+  box-shadow: 0 0 10px pink;
+}*/
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ADFF2F;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #008000;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #008000;
+}
+
+/*Transitions*/
+.default-fadeout{
+  opacity: 1;
+}
+
+.fadeout{
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+.default-fadein{
+  opacity: 0;
+}
+
+.fadein{
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+/*Anchors*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*Footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer {
+  font-size: 12px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#mm{
+  color: #0000FF;
+}
+
+#topsi {
+  color: #008080 !important;
+}

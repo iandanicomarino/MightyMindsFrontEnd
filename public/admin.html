@@ -1,0 +1,151 @@
+<html class="no-js" lang="en">
+  <head>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-as.css">
+    <!-- <script src="script-as.js"></script> -->
+    <title>Admin</title>
+  </head>
+  <body>
+    <main>
+      <section class="module parallax parallax-1" style="background-position: 0px 4px;">
+        <!-- <h1>Mighty Minds</h1> -->
+        <center><img src="./img/Drawing.png"/></center>
+      </section>
+    </main>
+    <script>
+    (function(){
+
+      var parallax = document.querySelectorAll(".parallax"),
+          speed = 0.7;
+
+      window.onscroll = function(){
+        [].slice.call(parallax).forEach(function(el,i){
+
+          var windowYOffset = window.pageYOffset,
+              elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
+
+          el.style.backgroundPosition = elBackgrounPos;
+
+        });
+      };
+    })();
+    </script>
+    <!-- <script>
+    function select() {
+      var = value;
+      value = document.getElementById("school-tab").value;
+    }
+    </script> -->
+    <nav id="nav" class="navbar" data-spy="affix" data-offset-top="210">
+      <div id="header" class="container-fluid">
+        <!-- <a class="navbar-brand" href="#mm">Mighty Minds</a> -->
+        <div class="btn-group dropdown admin">
+          <button type="button" class="btn btn-default">Odd Mean</button>
+          <button style="height:34px;" type="button" class="btn btn-default dropdown-toggle caret-btn" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        <h4>Admin:</h4>
+        <img src="./img/Anon.png" id="admin-img" alt="admin-pic" usemap="#admin-img">
+        <map name="admin-img">
+          <area shape="rect" coords="0,0,100,100" href="#" alt="admin-img">
+        </map>
+      </div>
+    </nav>
+
+      <div class="row">
+        <div class="tabs-left col-xs-3 col-xs-offset-0 col-sm-1 col-sm-offset-2 tab">
+          <ul class="nav nav-tabs nv-tbs" style="padding-bottom: 500px;">
+            <li class="active"><a href="#dashboard" data-toggle="tab" aria-expanded="true">Dashboard</a></li>
+            <li class=""><a href="#school" data-toggle="tab" aria-expanded="false">Schools</a></li>
+            <li class=""><a href="#sponsors" data-toggle="tab" aria-expanded="false">Sponsors</a></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-sm-6">
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="dashboard">
+              <h3>Dashboard:</h3><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+            </div>
+
+            <div class="tab-pane fade" id="school">
+              <h3>School:</h3>
+              <div class="container">
+                <form role="form">
+                  <div class="form-group">
+                    <select onchange="select()" class="form-control" id="school-tab">
+                      <option value="PUP">Polytechnic University of the Philippines</option>
+                      <option value="TIP">Technological Institute of the Philippines</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <button type="button" class="btn btn-default btn-lg modal-btn" data-toggle="modal" data-target="#mdl">Students</button>
+              <div class="modal fade" id="mdl" role="dialog" style="display: none;">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4>Students</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default">Transaction</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="sponsors">
+              <h3>Sponsors:</h3><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus quam, mattis non egestas sed, scelerisque in lorem. Donec ac lacus est. Sed semper vulputate lectus, eu bibendum risus vestibulum non. Etiam sollicitudin consectetur imperdiet. Duis interdum eget ex ac condimentum. Etiam laoreet tempor felis sollicitudin malesuada. Fusce viverra ultrices erat vitae ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin eu pharetra magna, eu placerat lorem. Duis hendrerit auctor ex eu tempor. Curabitur tincidunt eu ex eu dignissim.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="footer">
+        &copy;2007 - 2016<br>
+        <a href="http://mightyminds.org/">MightyMinds, Inc.</a>
+        | All Rights Reserved.<br>
+        <strong>Site Designed by:</strong>
+        <a href="http://myteamops.com/">Team O.P.S. Inc.</a>
+      </div>
+    </footer>
+  </body>
+</html>

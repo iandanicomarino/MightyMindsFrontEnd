@@ -1,0 +1,284 @@
+body{
+  font-family: Roboto;
+}
+
+/*Font*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'iRoboto';
+  src: url('roboto/Roboto-LightItalic.ttf') format('truetype');
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Parallax*/
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  padding: 65px 0;
+  background-position: 0 0;
+}
+/*section.module.parallax h1 {
+  color: #1e1e1e;
+  font-size: 70px;
+  font-family: iRoboto;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 0 0 10px white;
+}*/
+section.module.parallax img {
+  width:400px;
+}
+section.module.parallax-1 {
+  background-image: url("./img/pattern1.png");
+  /*background-image: url("./img/sofa.jpg");
+  background-size: 500px 200px;*/
+}
+
+@media (max-width:410px){
+  section.module.parallax img{
+    width: 300px;
+  }
+}
+
+@media (max-width:300px){
+  section.module.parallax h1{
+    font-size: 20px;.
+  }
+}
+
+
+/*Header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#header{
+  background-color: #FFFFFF;
+  position: relative;
+  width:100%;
+  height:70px;
+  border-bottom-style: solid;
+  border-bottom-color: #7FFF00;
+  border-width: 2.7px;
+}
+
+.navbar{
+  margin-bottom: 0px !important;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top:70px;
+    padding:0;
+}
+
+.admin{
+  font-family: monospace;
+  float:right;
+  margin-top: 20px;
+  margin-right: 69px;
+}
+
+@media (max-width:370px){
+  .admin{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width:270px){
+  .admin{
+    margin-right: 10px;
+  }
+}
+
+@media (max-width:175px){
+  .caret-btn{
+    visibility: hidden;
+  }
+}
+
+h4{
+  font-family: monospace;
+  float:right;
+  margin-top: 27px;
+  margin-right: 10px
+}
+
+@media (max-width:260px){
+  h4{
+    visibility: hidden;
+  }
+}
+
+h3{
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+@media (max-width:700px){
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 10px;
+  }
+}
+
+#admin-img{
+  width:50px;
+  height:50px;
+  float:right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width:32px){
+  #admin-img{
+    visibility: hidden;
+  }
+}
+
+/*Body~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Tabs*/
+.tabs-left > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+  color: #00FF00;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+/*Tab Contents*/
+@media (max-width:970px){
+  nv-tbs{
+    padding-bottom:0;
+  }
+}
+
+.row{
+  margin-right: 0;
+}
+
+.tab-content{
+   margin-left:20px
+   width: 50%;
+   height: auto;
+   border-style: solid hidden;
+   border-width: thin;
+   border-color: #ADFF2F;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin:70px 0 50px 0;
+}
+
+@media (max-width:997px){
+  .tab-content{
+    margin-left: 0;
+  }
+}
+
+.tab{
+  font-family: Roboto;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+
+#school-tab{
+  width:340px;
+  margin-top: 5px;
+}
+
+@media (max-width:500px){
+  #school-tab{
+    width:170px;
+    margin-top: 5px;
+  }
+}
+
+.modal-btn{
+  margin-left: auto;
+  position: relative;
+}
+
+.modal-dialog{
+  margin-top: 100px;
+}
+
+.container{
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+/*Footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+  width: 100%;
+  height: 140px;
+  background-color: gray;
+  border-width: thick;
+}
+
+.footer{
+  font-size: 12px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer a{
+  color: #FFFFFF;
+}
