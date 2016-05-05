@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "frontendof mightyminds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iandanicomarino/MightyMindsFrontEnd.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iandanicomarino/MightyMindsFrontEnd/issues"
+  },
+  "homepage": "https://github.com/iandanicomarino/MightyMindsFrontEnd#readme"
+}
